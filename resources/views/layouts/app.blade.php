@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/menu_sideslide.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">    
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <!-- include summernote css/js -->
     <!-- Fonts -->
 </head>
 <body>
@@ -56,6 +57,19 @@
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="{{ url('/login') }}">Login</a>
                   </li> 
+                  @auth
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                     {{ __('Logout') }}
+                 </a>
+                
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                     @csrf
+                 </form>
+                  </li>
+                  @endif
                 </ul>              
               </div>
             </div>
@@ -74,12 +88,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-                <h3>Essence</h3>
+                <h3 style="color:white">{{ config('app.name') }}</h3>
                 <div class="textwidget">
-                  <p>If you think you have the passion, 
-                  attitude and capability to join us 
-                  the next big software company
-                  s so that we can get the convers.</p>
+                  <p style="color:white">we accept the connection between our customers and the researcher is agreeable and neighborly 
+                    and in this manner your installment is only an energy about our penance.
+                     Thusly, we give you the opportunity to arrange your financial plan with us so we can help one .</p>
                 </div>
                 <ul class="footer-social">
                   <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
@@ -88,21 +101,43 @@
                   <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
                 </ul> 
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                 <div class="widget">
-                  <h3 class="block-title">Short Link</h3>
-                  <ul class="menu">
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Advance Sarch</a></li>
-                    <li><a href="#">Site Map</a></li>
-                  </ul>
+                  <h3 class="text-center"  style="color:white;font-weight:bold !important">Our Expertise</h3>
+                 <div class="row">
+                   <div class="col-sm-4">
+                    <ul class="menu">
+                      <li><a href="#">Accounting</a></li>
+                      <li><a href="#">Geology</a></li>
+                      <li><a href="#">Computer Science</a></li>
+                      <li><a href="#">Geography</a></li>
+                      <li><a href="#">Statistics</a></li>
+                    </ul>
+                   </div>
+                   <div class="col-sm-4">
+                    <ul class="menu">
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Psychology</a></li>
+                      <li><a href="#">Cyber Security</a></li>
+                    </ul>
+                   </div>
+                   <div class="col-sm-4">
+                    <ul class="menu">
+                      <li><a href="#">Marketing</a></li>
+                      <li><a href="#">Philosopy</a></li>
+                      <li><a href="#">Film</a></li>
+                      <li><a href="#">Chemistry</a></li>
+                      <li><a href="#"> and Many More</a></li>
+                    </ul>
+                   </div>
+                 </div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                 <div class="widget">
-                  <h3 class="block-title">Contact Us</h3>
+                  <h3 class="block-title" style="color:white">Contact Us</h3>
                   <ul class="contact-footer">
                     <li>
                       <strong>Address :</strong> <span>1900 Pico Blvd, New York br Centernial, colorado</span>
@@ -111,62 +146,15 @@
                       <strong>Phone :</strong> <span>+48 123 456 789</span>
                     </li>
                     <li>
-                      <strong>E-mail :</strong> <span><a href="#">info@example.com</a></span>
+                      <strong>E-mail :</strong> <span><a href="#" style="">info@example.com</a></span>
                     </li>
                   </ul> 
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-                <div class="widget">
-                  <h3 class="block-title">Instagram</h3>
-                  <ul class="instagram-footer">
-                    <li><a href="#"><img src="img/instagram/insta1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/instagram/insta2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/instagram/insta3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/instagram/insta4.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/instagram/insta5.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/instagram/insta6.jpg" alt=""></a></li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- Footer area End -->
-        
-        <!-- Copyright Start  -->
-        <div id="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="site-info float-left">
-                  <p>Crafted by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
-                </div>              
-                <div class="float-right">  
-                  <ul class="nav nav-inline">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">About Prime</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">TOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Return Policy</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Copyright End -->
-  
+        <!-- Footer area End -->  
       </footer>
       <!-- Footer Section End --> 
     </div>

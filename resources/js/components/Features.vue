@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-xs-12">            
             <div class="cta-text">
-              <h5>
+              <h5 style="color:black;background-color:white">
                 Why Choose Us Compared To Others?
               </h5>
             </div>
@@ -35,8 +35,10 @@
               </div>
               <div class="featured-content">
                 <div class="icon-o"><i class="lni-layout"></i></div>
-                <h4>Refreshing Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <h4>Refreshing Design for websites done</h4>
+                <p>
+                  Perfect look and also appealing on any available devices
+                  </p>
               </div>
             </div>
           </div>
@@ -50,7 +52,9 @@
               <div class="featured-content">
                 <div class="icon-o"><i class="lni-tab"></i></div>
                 <h4>Fully Responsive</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <p>
+                  The websites are fully responsive. We are really great in what we do.
+                </p>
               </div>
             </div>
           </div>
@@ -64,7 +68,9 @@
               <div class="featured-content">
                 <div class="icon-o"><i class="lni-rocket"></i></div>
                 <h4>Fast & Smooth</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <p>
+                  We deliver the projects very fast and we also guarantee a high quality job
+                </p>
               </div>
             </div>
           </div>
@@ -73,12 +79,14 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="featured-box">
               <div class="featured-icon">
-                <i class="lni-database"></i>
+                <i class="fa fa-lock"></i>
               </div>
               <div class="featured-content">
-                <div class="icon-o"><i class="lni-database"></i></div>
-                <h4>SEO Optimized</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <div class="icon-o"><i class="fa fa-lock"></i></div>
+                <h4>Security of Details</h4>
+                <p>
+                  Users Data are secure from leaks. Our Payment system is highly Secure.
+                </p>
               </div>
             </div>
           </div>
@@ -87,12 +95,14 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="featured-box">
               <div class="featured-icon">
-                <i class="lni-leaf"></i>
+                <i class="fa fa-users"></i>
               </div>
               <div class="featured-content">
-                <div class="icon-o"><i class="lni-leaf"></i></div>
-                <h4>Clean Code</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <div class="icon-o"><i class="fa fa-users"></i></div>
+                <h4>Long-term Experience in Professional Writing</h4>
+                <p>
+                  Our Tutors and writer are great as they have over 15 years experience tutoring.
+                </p>
               </div>
             </div>
           </div>
@@ -106,7 +116,10 @@
               <div class="featured-content">
                 <div class="icon-o"><i class="lni-pencil"></i></div>
                 <h4>Free 24/7 Support</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                <p>
+                  Your comfort and well-being is important to us, and that's why we hav
+                  e a great staff to support you whenever you may need it.
+                </p>
               </div>
             </div>
           </div>
@@ -133,18 +146,18 @@
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div class="facts-item">
               <div class="icon">
-                <i class="lni-coffee-cup"></i>
+                <i class="fa fa-file"></i>
               </div>                
               <div class="fact-count">
-                <h3><span class="counter">700</span></h3>
-                <h4>Cup of Coffee</h4>
+                <h3><span class="counter">7000+</span></h3>
+                <h4>Orders in the sphere</h4>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div class="facts-item">
               <div class="icon">
-                <i class="lni-user"></i>
+                <i class="fa fa-users"></i>
               </div>                
               <div class="fact-count">
                 <h3><span class="counter">10000</span>+</h3>

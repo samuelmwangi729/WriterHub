@@ -5,8 +5,11 @@
  */
 
 require('./bootstrap');
+import swal from 'sweetalert';
+window.swal = swal;
 
 window.Vue = require('vue');
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -23,6 +26,15 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('welcome-component', require('./components/WelcomeComponent.vue').default);
 Vue.component('services-component', require('./components/Service.vue').default);
 Vue.component('features-component', require('./components/Features.vue').default);
+Vue.component('papers-component', require('./components/Papers.vue').default);
+Vue.component('subject-component', require('./components/Subjects.vue').default);
+Vue.component('topics-component', require('./components/Topics.vue').default);
+Vue.component('checkout-component', require('./components/CheckOut.vue').default);
+Vue.component('orders-component', require('./components/Orders.vue').default);
+Vue.component('user-component', require('./components/Users.vue').default);
+Vue.component('uploaded-component', require('./components/Uploaded.vue').default);
+Vue.component('dist-component', require('./components/Dist.vue').default);
+Vue.component('admin-component', require('./components/Admin.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,4 +44,4 @@ Vue.component('features-component', require('./components/Features.vue').default
 
 const app = new Vue({
     el: '#app',
-});
+})

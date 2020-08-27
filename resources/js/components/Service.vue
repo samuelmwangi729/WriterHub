@@ -24,7 +24,9 @@
         <div class="section-header">          
           <h2 class="section-title">Our Services</h2>
           <span>Services</span>
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          <p class="section-subtitle">
+            We are proud to serve you in but not limited to the following fields
+          </p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-xs-12">
@@ -33,43 +35,62 @@
                 <i class="lni-pencil"></i>
               </div>
               <h4>Content Writing</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon color-1">
+                <i class="fa fa-book-reader"></i>
+              </div>
+              <h4>Proof Reading</h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
               <div class="icon color-2">
-                <i class="lni-cog"></i>
+                <i class="fa fa-globe"></i>
               </div>
               <h4>Web Development</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
               <div class="icon color-3">
-                <i class="lni-stats-up"></i>
+                <i class="fa fa-cog fa-spin"></i>
               </div>
               <h4>Graphic Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s">
               <div class="icon color-4">
-                <i class="lni-layers"></i>
+                <i class="fa fa-cash-register"></i>
               </div>
-              <h4>UI/UX Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+              <h4>Accounting</h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">
               <div class="icon color-5">
-                <i class="lni-tab"></i>
+                <i class="fa fa-cogs"></i>
               </div>
-              <h4>App Development</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+              <h4>Engineering</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">
+              <div class="icon color-5">
+                <i class="fa fa-flask"></i>
+              </div>
+              <h4>Chemistry</h4>
+            </div>
+          </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s">
+              <div class="icon color-5">
+                <i class="fa fa-calculator"></i>
+              </div>
+              <h4>Physics</h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
@@ -78,7 +99,6 @@
                 <i class="lni-briefcase"></i>
               </div>
               <h4>Digital Marketing</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
             </div>
           </div>
         </div>

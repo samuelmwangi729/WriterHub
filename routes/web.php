@@ -12,16 +12,138 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/paywithPaypal',[
+    'uses'=>'PaymentController@PaywithPaypal'
+]);
+Route::get('/paywithMpesa',[
+    'uses'=>'PaymentController@PaywithMpesa'
+]);
+Route::get('confirmation',[
+    'uses'=>'PaymentController@confirmation'
+]);
+Route::get('/SetPhone/{phone}',[
+    'uses'=>'PaymentController@setPhone'
+]);
+Route::get('/d00zYmBsVn75YHcGkcjwU/{payer}',[
+    'uses'=>'OrdersController@Complete'
+]);
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/Services',[
     'uses'=>'IndexController@services'
 ]);
+Route::get('cRONkxTevXKStw7',[
+    'uses'=>'IndexController@words'
+]);
+Route::get('cRONkxTevXKkdStw7',[
+    'uses'=>'IndexController@getPrices'
+]);
+Route::post('/JPUFR37qDO0UiQQAIiniSy/{id}',[
+    'uses'=>'PricesController@destroy'
+]);
+Route::get('/iMZWbOIIXLmlsteI/{paper}',[
+    'uses'=>'IndexController@Prices'
+]);
 Route::get('/Features',[
     'uses'=>'IndexController@features'
 ]);
 Auth::routes();
-
+Route::get('EqmVUFqkwQcz8Hv2UJU2',[
+    'uses'=>'SubjectsController@all'
+]);
+Route::get('nDuQWfvtAEqmVUFqkwQcz8Hv2UJU2',[
+    'uses'=>'PapersController@all'
+]);
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('eb9r1fc0k7Ltohf2vxFmGuiSu1',[
+    'uses'=>'IndexController@Orders'
+]);
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('orders','OrdersController');
+    Route::resource('Payments','PaymentController');
+    Route::resource('papers','PapersController');
+    Route::post('/JPUFR37qMEr64CHDO0UiQQAIiniSy/{id}',[
+        'uses'=>'PapersController@destroy'
+    ]);
+    Route::post('/JPUFR37qMEr64CHDO0y/{id}',[
+        'uses'=>'SubjectsController@destroy'
+    ]);
+    Route::post('/JPUFEr64CHDO0y',[
+        'uses'=>'TopicsController@Prices'
+    ]);
+    Route::resource('subjects','SubjectsController');
+    Route::resource('prices','PricesController');
+    Route::resource('topics','TopicsController');
+    Route::get('SetPrice/{paper}/{price}',[
+        'uses'=>'PricesController@Price'
+    ]);
+    Route::get('PDU14b4PJqdWGwWjrenx3p',[
+        'uses'=>'OrdersController@CountOrders'
+    ]);
+    Route::get('PDU14b4PJ',[
+        'uses'=>'OrdersController@CompletedOrders'
+    ]);
+    Route::get('PDU14blOPS86sj4PJ',[
+        'uses'=>'OrdersController@Payments'
+    ]);
+    Route::get('PDU14blOPS8l089',[
+        'uses'=>'OrdersController@Disputed'
+    ]);
+    Route::get('/ybSiEwZMl0cCcwpI',[
+        'uses'=>'OrdersController@GetMine'
+    ]);
+    Route::get('/getOrders/{id}',[
+        'uses'=>'OrdersController@show'
+    ]);
+    Route::get('/j8yhwsJPUFEr64CHDO0y',[
+        'uses'=>'HomeController@getUsers'
+    ]);
+    Route::get('/Iayf0SkUEIvSugV1ES4GW8M',[
+        'uses'=>'UsersController@index',
+        'as'=>'users.view'
+    ]);
+    Route::get('/j8yhwsJPUFEr64C/{id}/{action}',[
+        'uses'=>'UsersController@Promote',
+        'as'=>'users.promote'
+    ]);
+    Route::get('/88jPjyoun7t6HqMT5',[
+        'uses'=>'UploadedController@index',
+        'as'=>'uploaded'
+    ]);
+    Route::get('/hdyiohjhwBK08Po7dcvP',[
+        'uses'=>'UploadedController@getPending',
+    ]);
+    Route::get('/jhwBK08Po7dcvP',[
+        'uses'=>'UploadedController@getUploaded',
+        'as'=>'uploaded.get'
+    ]);
+    Route::get('Distribute',[
+        'uses'=>'OrdersController@Distribute'
+    ]);
+    Route::post('Assignment/Distribute',[
+        'uses'=>'OrdersController@Give',
+        'as'=>'ass.dist'
+    ]);
+    Route::get('/getDistributed',[
+        'uses'=>'OrdersController@Dist'
+    ]);
+    Route::get('/reset/{id}',[
+        'uses'=>'OrdersController@reset'
+    ]);
+    Route::get('/getCompleted',[
+        'uses'=>'OrdersController@getPendingOrders'
+    ]);
+    Route::get('/Accept/{id}',[
+        'uses'=>'OrdersController@accept',
+        'as'=>'accept'
+    ]);
+    Route::get('/Dispute/{id}',[
+        'uses'=>'OrdersController@Dispute',
+        'as'=>'Dispute'
+    ]);
+    Route::post('/jhwBK0dcvP',[
+        'uses'=>'UploadedController@store',
+        'as'=>'uploaded.store'
+    ]);
+});
