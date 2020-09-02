@@ -56,7 +56,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <span><h5 style="color:green"><strong style="color:black">Price: </strong>$ {{ total }}</h5></span>
+                      <span><h6 style="color:green"><strong style="color:black">Price: </strong>$ {{ total }}</h6></span>
                     </div>
                     <div class="col-sm-7 text-center">
                       <div class="form-submit">
@@ -68,7 +68,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="col-lg-6 col-md-12 col-xs-12 d-none d-md-block">
               <div class="carousel-caption text-left">
                 <h4 class="wow fadeInRight" data-wow-delay="0.2s" style="color:white;font-size:20px !important">Tutoring</h4>
                 <h2 class="wow fadeInRight" data-wow-delay="0.4s" style="color:white !important">Get Help</h2>

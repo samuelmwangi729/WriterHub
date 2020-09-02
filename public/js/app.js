@@ -42046,7 +42046,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", { staticClass: "col-12" }, [
                         _c("span", [
-                          _c("h5", { staticStyle: { color: "green" } }, [
+                          _c("h6", { staticStyle: { color: "green" } }, [
                             _c("strong", { staticStyle: { color: "black" } }, [
                               _vm._v("Price: ")
                             ]),
@@ -42095,57 +42095,65 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-6 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "carousel-caption text-left" }, [
-        _c(
-          "h4",
-          {
-            staticClass: "wow fadeInRight",
-            staticStyle: { color: "white", "font-size": "20px !important" },
-            attrs: { "data-wow-delay": "0.2s" }
-          },
-          [_vm._v("Tutoring")]
-        ),
-        _vm._v(" "),
-        _c(
-          "h2",
-          {
-            staticClass: "wow fadeInRight",
-            staticStyle: { color: "white !important" },
-            attrs: { "data-wow-delay": "0.4s" }
-          },
-          [_vm._v("Get Help")]
-        ),
-        _vm._v(" "),
-        _c(
-          "h4",
-          {
-            staticClass: "wow fadeInRight",
-            staticStyle: { color: "white", "font-size": "15px !important" },
-            attrs: { "data-wow-delay": "0.6s" }
-          },
-          [_vm._v("Online Tutoring help from verified tutors 24/7 on demand.")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "btn btn-lg btn-common btn-effect wow fadeInRight",
-            attrs: { href: "/register", "data-wow-delay": "0.9s" }
-          },
-          [_vm._v("Join Us")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "btn btn-lg btn-border wow fadeInRight",
-            attrs: { href: "/", "data-wow-delay": "1.2s" }
-          },
-          [_vm._v("How it Works")]
-        )
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "col-lg-6 col-md-12 col-xs-12 d-none d-md-block" },
+      [
+        _c("div", { staticClass: "carousel-caption text-left" }, [
+          _c(
+            "h4",
+            {
+              staticClass: "wow fadeInRight",
+              staticStyle: { color: "white", "font-size": "20px !important" },
+              attrs: { "data-wow-delay": "0.2s" }
+            },
+            [_vm._v("Tutoring")]
+          ),
+          _vm._v(" "),
+          _c(
+            "h2",
+            {
+              staticClass: "wow fadeInRight",
+              staticStyle: { color: "white !important" },
+              attrs: { "data-wow-delay": "0.4s" }
+            },
+            [_vm._v("Get Help")]
+          ),
+          _vm._v(" "),
+          _c(
+            "h4",
+            {
+              staticClass: "wow fadeInRight",
+              staticStyle: { color: "white", "font-size": "15px !important" },
+              attrs: { "data-wow-delay": "0.6s" }
+            },
+            [
+              _vm._v(
+                "Online Tutoring help from verified tutors 24/7 on demand."
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-lg btn-common btn-effect wow fadeInRight",
+              attrs: { href: "/register", "data-wow-delay": "0.9s" }
+            },
+            [_vm._v("Join Us")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-lg btn-border wow fadeInRight",
+              attrs: { href: "/", "data-wow-delay": "1.2s" }
+            },
+            [_vm._v("How it Works")]
+          )
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
