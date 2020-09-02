@@ -1,7 +1,88 @@
 <template>
 <div class="container-fluid">
+           <!-- Subcribe Section Start -->
+    <div id="ssub" class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="subscribe-form">
+              <div class="form-wrapper">
+                 <form @submit.prevent="Post">
+                  <div class="row">
+                    <div class="col-12 form-line">
+                      <div class="form-group">
+                          <label for="document" class="label-control">Document Type</label>
+                          <span v-if="errorDoc" style="color:red">
+                               <br>{{ errorDoc }}
+                          </span>
+                                    <select class="form-control" v-model="DocType">
+                        <option label="--Select Paper type--"></option>
+                        <option v-for="item in Papers" :key="item.id" :value="item.Paper">{{item.Paper}}</option>
+                        </select>
+                      </div>
+                    </div>
+                     <div class="col-12 form-line">
+                      <div class="form-group">
+                          <label for="document" class="label-control">Level</label>
+                          <span v-if="errorLevel" style="color:red">
+                              <br>{{ errorLevel }}
+                          </span>
+                          <select class="form-control" name="Level" v-model="Level">
+                              <option label="--Select Level--"></option>
+                              <option>PhD</option>
+                              <option>Masters</option>
+                              <option>Undergraduate</option>
+                              <option>College</option>
+                              <option>High School</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-line">
+                      <div class="form-group">
+                        <label class="label-control" for="Deadline">Deadline</label>
+                        <span v-if="errorDate" style="color:red">
+                              <br>{{ errorDate }}
+                          </span>
+                        <input type="date" class="form-control" name="Deadline" v-model="Deadline">
+                      </div>
+                    </div>
+                     <div class="col-12 form-line">
+                      <div class="form-group">
+                          <label for="document" class="label-control">Pages (1 page has {{ Words }} words)</label>
+                        <span v-if="errorPage" style="color:red">
+                              <br>{{ errorPage }}
+                          </span>
+                          <input type="number" class="form-control" name="Pages" v-model="Pages" maxlength="3">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <span><h5 style="color:green"><strong style="color:black">Price: </strong>$ {{ total }}</h5></span>
+                    </div>
+                    <div class="col-sm-7 text-center">
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-success btn-effect">Order Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+              <div class="carousel-caption text-left">
+                <h4 class="wow fadeInRight" data-wow-delay="0.2s" style="color:white;font-size:20px !important">Tutoring</h4>
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s" style="color:white !important">Get Help</h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s" style="color:white;font-size:15px !important">Online Tutoring help from verified tutors 24/7 on demand.</h4>
+                <a href="/register" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Join Us</a>
+                <a href="/" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">How it Works</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subcribe Section End -->
      <!-- Main Carousel Section -->
-      <div id="carousel-area">
+      <!-- <div id="carousel-area">
         <div id="carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
@@ -12,7 +93,7 @@
             <div class="carousel-item active">
               <img src="img/slider/bg-1.jpg" alt="">
               <div class="carousel-caption text-left">
-                <h3 class="wow fadeInRight" data-wow-delay="0.2s">Tutoring</h3>  
+                <h3 class="wow fadeInRight" data-wow-delay="0.2s">Tutoring</h3>
                 <h2 class="wow fadeInRight" data-wow-delay="0.4s">Get Help</h2>
                 <h4 class="wow fadeInRight" data-wow-delay="0.6s">Online Tutoring help from verified tutors 24/7 on demand.</h4>
                 <a href="/register" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Join Us</a>
@@ -23,8 +104,8 @@
               <img src="img/slider/bg-3.jpg" alt="">
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInDown" data-wow-delay="0.3s">Excellent Services</h3>
-                <h2 class="wow bounceIn" data-wow-delay="0.6s">Top Rated Tutors</h2> 
-                <h4 class="wow fadeInUp" data-wow-delay="0.9s">We  work with the highest quality tutors. Many of our 
+                <h2 class="wow bounceIn" data-wow-delay="0.6s">Top Rated Tutors</h2>
+                <h4 class="wow fadeInUp" data-wow-delay="0.9s">We  work with the highest quality tutors. Many of our
                    tutors are affiliated with top tier educational institutions.</h4>
                 <a href="/" class="btn btn-lg btn-common btn-effect wow fadeInUp" data-wow-delay="1.2s">Make your Order Now</a>
               </div>
@@ -33,7 +114,7 @@
               <img src="img/slider/bg-2.jpg" alt="">
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInDown" data-wow-delay="0.3s">Readily Available Guidance</h3>
-                <h2 class="wow fadeInRight" data-wow-delay="0.6s">We are Always Online to Help</h2> 
+                <h2 class="wow fadeInRight" data-wow-delay="0.6s">We are Always Online to Help</h2>
                 <h4 class="wow fadeInUp" data-wow-delay="0.6s">Personal guidance and support 24/7</h4>
                 <a href="/register" class="btn btn-lg btn-border wow fadeInUp" data-wow-delay="0.9s">Join Us Today</a>
               </div>
@@ -48,9 +129,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>  
-      
-    <!-- Call to Action Start -->
+      </div>
+    Call to Action Start -->
     <section class="call-action section">
       <div class="container">
         <div class="row justify-content-center">
@@ -68,7 +148,7 @@
     </section>
     <!-- Call to Action End -->
       <!--Add A budet Form here-->
-      <div class="row" style="padding-top:20px">
+      <!-- <div class="row" style="padding-top:20px">
           <div class="col-sm-12 offset-sm-3">
                 <div class="col-lg-5 col-md-12 col-xs-12">
             <div class="subscribe-form">
@@ -85,10 +165,10 @@
                           <span v-if="errorDoc" style="color:red">
                                <br>{{ errorDoc }}
                           </span>
-                          <select class="form-control" v-model="DocType">
-              <option label="--Select Paper type--"></option>
-              <option v-for="item in Papers" :key="item.id" :value="item.Paper">{{item.Paper}}</option>
-            </select>
+                                    <select class="form-control" v-model="DocType">
+                        <option label="--Select Paper type--"></option>
+                        <option v-for="item in Papers" :key="item.id" :value="item.Paper">{{item.Paper}}</option>
+                        </select>
                       </div>
                     </div>
                      <div class="col-12 form-line">
@@ -139,7 +219,7 @@
             </div>
           </div>
           </div>
-      </div>
+      </div> -->
       <!--everything in vuejs-->
     <!-- blog Section End -->
        <!-- Subcribe Section Start -->
@@ -169,7 +249,7 @@
                               Email Address
                         </label>
                         <input type="email" class="form-control" name="email" placeholder="Email">
-                      </div> 
+                      </div>
                     </div>
                     <div class="col-12">
                       <div class="form-submit mt-5">
@@ -188,7 +268,7 @@
               </div>
               <div class="text-box">
                 <h4>No Hassle, Just Give It Out</h4>
-                <p>we believe that our clients shouldn't worry about anything except their writing. 
+                <p>we believe that our clients shouldn't worry about anything except their writing.
                   That's why we take care of the whole process for you - all you need to do is choose your paper details and let us work on it</p>
               </div>
             </div>
@@ -274,7 +354,7 @@ export default{
         this.isValid=true
       }
       if(this.isValid){
-        //post the form data 
+        //post the form data
          axios.post('/eb9r1fc0k7Ltohf2vxFmGuiSu1',{
           //the data goes here
           _token:this.token,
@@ -301,7 +381,7 @@ export default{
             }else{
                   window.open('/register','_parent')
             }
-         
+
             });
           //endsweetalert
         }).catch((err)=>{

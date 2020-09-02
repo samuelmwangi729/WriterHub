@@ -3467,6 +3467,86 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3532,7 +3612,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (this.isValid) {
-        //post the form data 
+        //post the form data
         axios.post('/eb9r1fc0k7Ltohf2vxFmGuiSu1', {
           //the data goes here
           _token: this.token,
@@ -41705,290 +41785,292 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("div", { staticClass: "row", staticStyle: { "padding-top": "20px" } }, [
-      _c("div", { staticClass: "col-sm-12 offset-sm-3" }, [
-        _c("div", { staticClass: "col-lg-5 col-md-12 col-xs-12" }, [
-          _c("div", { staticClass: "subscribe-form" }, [
-            _c("div", { staticClass: "form-wrapper" }, [
-              _vm._m(2),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.Post($event)
+    _c("div", { staticClass: "section", attrs: { id: "ssub" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row justify-content-between" }, [
+          _c("div", { staticClass: "col-lg-5 col-md-12 col-xs-12" }, [
+            _c("div", { staticClass: "subscribe-form" }, [
+              _c("div", { staticClass: "form-wrapper" }, [
+                _c(
+                  "form",
+                  {
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        return _vm.Post($event)
+                      }
                     }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-12 form-line" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "label-control",
-                            attrs: { for: "document" }
-                          },
-                          [_vm._v("Document Type")]
-                        ),
-                        _vm._v(" "),
-                        _vm.errorDoc
-                          ? _c("span", { staticStyle: { color: "red" } }, [
-                              _c("br"),
-                              _vm._v(
-                                _vm._s(_vm.errorDoc) +
-                                  "\n                          "
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.DocType,
-                                expression: "DocType"
-                              }
-                            ],
-                            staticClass: "form-control",
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.DocType = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
-                            }
-                          },
-                          [
-                            _c("option", {
-                              attrs: { label: "--Select Paper type--" }
-                            }),
-                            _vm._v(" "),
-                            _vm._l(_vm.Papers, function(item) {
-                              return _c(
-                                "option",
+                  },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-12 form-line" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "label",
+                            {
+                              staticClass: "label-control",
+                              attrs: { for: "document" }
+                            },
+                            [_vm._v("Document Type")]
+                          ),
+                          _vm._v(" "),
+                          _vm.errorDoc
+                            ? _c("span", { staticStyle: { color: "red" } }, [
+                                _c("br"),
+                                _vm._v(
+                                  _vm._s(_vm.errorDoc) +
+                                    "\n                          "
+                                )
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              directives: [
                                 {
-                                  key: item.id,
-                                  domProps: { value: item.Paper }
-                                },
-                                [_vm._v(_vm._s(item.Paper))]
-                              )
-                            })
-                          ],
-                          2
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-12 form-line" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "label-control",
-                            attrs: { for: "document" }
-                          },
-                          [_vm._v("Level")]
-                        ),
-                        _vm._v(" "),
-                        _vm.errorLevel
-                          ? _c("span", { staticStyle: { color: "red" } }, [
-                              _c("br"),
-                              _vm._v(
-                                _vm._s(_vm.errorLevel) +
-                                  "\n                          "
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.DocType,
+                                  expression: "DocType"
+                                }
+                              ],
+                              staticClass: "form-control",
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.DocType = $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                }
+                              }
+                            },
+                            [
+                              _c("option", {
+                                attrs: { label: "--Select Paper type--" }
+                              }),
+                              _vm._v(" "),
+                              _vm._l(_vm.Papers, function(item) {
+                                return _c(
+                                  "option",
+                                  {
+                                    key: item.id,
+                                    domProps: { value: item.Paper }
+                                  },
+                                  [_vm._v(_vm._s(item.Paper))]
+                                )
+                              })
+                            ],
+                            2
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-12 form-line" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "label",
+                            {
+                              staticClass: "label-control",
+                              attrs: { for: "document" }
+                            },
+                            [_vm._v("Level")]
+                          ),
+                          _vm._v(" "),
+                          _vm.errorLevel
+                            ? _c("span", { staticStyle: { color: "red" } }, [
+                                _c("br"),
+                                _vm._v(
+                                  _vm._s(_vm.errorLevel) +
+                                    "\n                          "
+                                )
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.Level,
+                                  expression: "Level"
+                                }
+                              ],
+                              staticClass: "form-control",
+                              attrs: { name: "Level" },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.Level = $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                }
+                              }
+                            },
+                            [
+                              _c("option", {
+                                attrs: { label: "--Select Level--" }
+                              }),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("PhD")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Masters")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("Undergraduate")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("College")]),
+                              _vm._v(" "),
+                              _c("option", [_vm._v("High School")])
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-12 form-line" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "label",
+                            {
+                              staticClass: "label-control",
+                              attrs: { for: "Deadline" }
+                            },
+                            [_vm._v("Deadline")]
+                          ),
+                          _vm._v(" "),
+                          _vm.errorDate
+                            ? _c("span", { staticStyle: { color: "red" } }, [
+                                _c("br"),
+                                _vm._v(
+                                  _vm._s(_vm.errorDate) +
+                                    "\n                          "
+                                )
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c("input", {
                             directives: [
                               {
                                 name: "model",
                                 rawName: "v-model",
-                                value: _vm.Level,
-                                expression: "Level"
+                                value: _vm.Deadline,
+                                expression: "Deadline"
                               }
                             ],
                             staticClass: "form-control",
-                            attrs: { name: "Level" },
+                            attrs: { type: "date", name: "Deadline" },
+                            domProps: { value: _vm.Deadline },
                             on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.Level = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.Deadline = $event.target.value
                               }
                             }
-                          },
-                          [
-                            _c("option", {
-                              attrs: { label: "--Select Level--" }
-                            }),
-                            _vm._v(" "),
-                            _c("option", [_vm._v("PhD")]),
-                            _vm._v(" "),
-                            _c("option", [_vm._v("Masters")]),
-                            _vm._v(" "),
-                            _c("option", [_vm._v("Undergraduate")]),
-                            _vm._v(" "),
-                            _c("option", [_vm._v("College")]),
-                            _vm._v(" "),
-                            _c("option", [_vm._v("High School")])
-                          ]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-12 form-line" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "label-control",
-                            attrs: { for: "Deadline" }
-                          },
-                          [_vm._v("Deadline")]
-                        ),
-                        _vm._v(" "),
-                        _vm.errorDate
-                          ? _c("span", { staticStyle: { color: "red" } }, [
-                              _c("br"),
-                              _vm._v(
-                                _vm._s(_vm.errorDate) +
-                                  "\n                          "
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.Deadline,
-                              expression: "Deadline"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { type: "date", name: "Deadline" },
-                          domProps: { value: _vm.Deadline },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.Deadline = $event.target.value
-                            }
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-12 form-line" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "label-control",
-                            attrs: { for: "document" }
-                          },
-                          [
-                            _vm._v(
-                              "Pages (1 page has " +
-                                _vm._s(_vm.Words) +
-                                " words)"
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _vm.errorPage
-                          ? _c("span", { staticStyle: { color: "red" } }, [
-                              _c("br"),
-                              _vm._v(
-                                _vm._s(_vm.errorPage) +
-                                  "\n                          "
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.Pages,
-                              expression: "Pages"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "number",
-                            name: "Pages",
-                            maxlength: "3"
-                          },
-                          domProps: { value: _vm.Pages },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.Pages = $event.target.value
-                            }
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-12" }, [
-                      _c("span", [
-                        _c("h5", { staticStyle: { color: "green" } }, [
-                          _c("strong", { staticStyle: { color: "black" } }, [
-                            _vm._v("Price: ")
-                          ]),
-                          _vm._v("$ " + _vm._s(_vm.total))
+                          })
                         ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(3)
-                  ])
-                ]
-              )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-12 form-line" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c(
+                            "label",
+                            {
+                              staticClass: "label-control",
+                              attrs: { for: "document" }
+                            },
+                            [
+                              _vm._v(
+                                "Pages (1 page has " +
+                                  _vm._s(_vm.Words) +
+                                  " words)"
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm.errorPage
+                            ? _c("span", { staticStyle: { color: "red" } }, [
+                                _c("br"),
+                                _vm._v(
+                                  _vm._s(_vm.errorPage) +
+                                    "\n                          "
+                                )
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.Pages,
+                                expression: "Pages"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "number",
+                              name: "Pages",
+                              maxlength: "3"
+                            },
+                            domProps: { value: _vm.Pages },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.Pages = $event.target.value
+                              }
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-12" }, [
+                        _c("span", [
+                          _c("h5", { staticStyle: { color: "green" } }, [
+                            _c("strong", { staticStyle: { color: "black" } }, [
+                              _vm._v("Price: ")
+                            ]),
+                            _vm._v("$ " + _vm._s(_vm.total))
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(0)
+                    ])
+                  ]
+                )
+              ])
             ])
-          ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
         ])
       ])
     ]),
     _vm._v(" "),
-    _vm._m(4)
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3)
   ])
 }
 var staticRenderFns = [
@@ -41996,229 +42078,73 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "carousel-area" } }, [
-      _c(
-        "div",
-        {
-          staticClass: "carousel slide carousel-fade",
-          attrs: { id: "carousel-slider", "data-ride": "carousel" }
-        },
-        [
-          _c("ol", { staticClass: "carousel-indicators" }, [
-            _c("li", {
-              staticClass: "active",
-              attrs: { "data-target": "#carousel-slider", "data-slide-to": "0" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#carousel-slider", "data-slide-to": "1" }
-            }),
-            _vm._v(" "),
-            _c("li", {
-              attrs: { "data-target": "#carousel-slider", "data-slide-to": "2" }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "carousel-inner", attrs: { role: "listbox" } },
-            [
-              _c("div", { staticClass: "carousel-item active" }, [
-                _c("img", { attrs: { src: "img/slider/bg-1.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-caption text-left" }, [
-                  _c(
-                    "h3",
-                    {
-                      staticClass: "wow fadeInRight",
-                      attrs: { "data-wow-delay": "0.2s" }
-                    },
-                    [_vm._v("Tutoring")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h2",
-                    {
-                      staticClass: "wow fadeInRight",
-                      attrs: { "data-wow-delay": "0.4s" }
-                    },
-                    [_vm._v("Get Help")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h4",
-                    {
-                      staticClass: "wow fadeInRight",
-                      attrs: { "data-wow-delay": "0.6s" }
-                    },
-                    [
-                      _vm._v(
-                        "Online Tutoring help from verified tutors 24/7 on demand."
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "btn btn-lg btn-common btn-effect wow fadeInRight",
-                      attrs: { href: "/register", "data-wow-delay": "0.9s" }
-                    },
-                    [_vm._v("Join Us")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-lg btn-border wow fadeInRight",
-                      attrs: { href: "/", "data-wow-delay": "1.2s" }
-                    },
-                    [_vm._v("How it Works")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-item" }, [
-                _c("img", { attrs: { src: "img/slider/bg-3.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-caption text-center" }, [
-                  _c(
-                    "h3",
-                    {
-                      staticClass: "wow fadeInDown",
-                      attrs: { "data-wow-delay": "0.3s" }
-                    },
-                    [_vm._v("Excellent Services")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h2",
-                    {
-                      staticClass: "wow bounceIn",
-                      attrs: { "data-wow-delay": "0.6s" }
-                    },
-                    [_vm._v("Top Rated Tutors")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h4",
-                    {
-                      staticClass: "wow fadeInUp",
-                      attrs: { "data-wow-delay": "0.9s" }
-                    },
-                    [
-                      _vm._v(
-                        "We  work with the highest quality tutors. Many of our \n                   tutors are affiliated with top tier educational institutions."
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "btn btn-lg btn-common btn-effect wow fadeInUp",
-                      attrs: { href: "/", "data-wow-delay": "1.2s" }
-                    },
-                    [_vm._v("Make your Order Now")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-item" }, [
-                _c("img", { attrs: { src: "img/slider/bg-2.jpg", alt: "" } }),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-caption text-center" }, [
-                  _c(
-                    "h3",
-                    {
-                      staticClass: "wow fadeInDown",
-                      attrs: { "data-wow-delay": "0.3s" }
-                    },
-                    [_vm._v("Readily Available Guidance")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h2",
-                    {
-                      staticClass: "wow fadeInRight",
-                      attrs: { "data-wow-delay": "0.6s" }
-                    },
-                    [_vm._v("We are Always Online to Help")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h4",
-                    {
-                      staticClass: "wow fadeInUp",
-                      attrs: { "data-wow-delay": "0.6s" }
-                    },
-                    [_vm._v("Personal guidance and support 24/7")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-lg btn-border wow fadeInUp",
-                      attrs: { href: "/register", "data-wow-delay": "0.9s" }
-                    },
-                    [_vm._v("Join Us Today")]
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "carousel-control-prev",
-              attrs: {
-                href: "#carousel-slider",
-                role: "button",
-                "data-slide": "prev"
-              }
-            },
-            [
-              _c(
-                "span",
-                {
-                  staticClass: "carousel-control",
-                  attrs: { "aria-hidden": "true" }
-                },
-                [_c("i", { staticClass: "lni-chevron-left" })]
-              ),
-              _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "carousel-control-next",
-              attrs: {
-                href: "#carousel-slider",
-                role: "button",
-                "data-slide": "next"
-              }
-            },
-            [
-              _c(
-                "span",
-                {
-                  staticClass: "carousel-control",
-                  attrs: { "aria-hidden": "true" }
-                },
-                [_c("i", { staticClass: "lni-chevron-right" })]
-              ),
-              _vm._v(" "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-            ]
-          )
-        ]
-      )
+    return _c("div", { staticClass: "col-sm-7 text-center" }, [
+      _c("div", { staticClass: "form-submit" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-success btn-effect",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("Order Now")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-6 col-md-12 col-xs-12" }, [
+      _c("div", { staticClass: "carousel-caption text-left" }, [
+        _c(
+          "h4",
+          {
+            staticClass: "wow fadeInRight",
+            staticStyle: { color: "white", "font-size": "20px !important" },
+            attrs: { "data-wow-delay": "0.2s" }
+          },
+          [_vm._v("Tutoring")]
+        ),
+        _vm._v(" "),
+        _c(
+          "h2",
+          {
+            staticClass: "wow fadeInRight",
+            staticStyle: { color: "white !important" },
+            attrs: { "data-wow-delay": "0.4s" }
+          },
+          [_vm._v("Get Help")]
+        ),
+        _vm._v(" "),
+        _c(
+          "h4",
+          {
+            staticClass: "wow fadeInRight",
+            staticStyle: { color: "white", "font-size": "15px !important" },
+            attrs: { "data-wow-delay": "0.6s" }
+          },
+          [_vm._v("Online Tutoring help from verified tutors 24/7 on demand.")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-lg btn-common btn-effect wow fadeInRight",
+            attrs: { href: "/register", "data-wow-delay": "0.9s" }
+          },
+          [_vm._v("Join Us")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-lg btn-border wow fadeInRight",
+            attrs: { href: "/", "data-wow-delay": "1.2s" }
+          },
+          [_vm._v("How it Works")]
+        )
+      ])
     ])
   },
   function() {
@@ -42249,33 +42175,6 @@ var staticRenderFns = [
             ])
           ])
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sub-title text-center" }, [
-      _c("h3", [_vm._v("Get Our Prices. Its Simpler ")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("Use Our Calculator")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-4 mt-2 pull-right offset-sm-4" }, [
-      _c("div", { staticClass: "form-submit" }, [
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-success btn-effect",
-            attrs: { type: "submit" }
-          },
-          [_vm._v("Order Now")]
-        )
       ])
     ])
   },
@@ -42378,7 +42277,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "we believe that our clients shouldn't worry about anything except their writing. \n                  That's why we take care of the whole process for you - all you need to do is choose your paper details and let us work on it"
+                    "we believe that our clients shouldn't worry about anything except their writing.\n                  That's why we take care of the whole process for you - all you need to do is choose your paper details and let us work on it"
                   )
                 ])
               ])
@@ -55575,8 +55474,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/p1rate/Downloads/Sites/WritersHab/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/p1rate/Downloads/Sites/WritersHab/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/p1rate/Downloads/Sites/WriterHub/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/p1rate/Downloads/Sites/WriterHub/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
