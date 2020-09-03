@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/color-switcher.css') }}">
     <link rel="stylesheet" href="{{ asset('css/menu_sideslide.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">    
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <!-- include summernote css/js -->
     <!-- Fonts -->
@@ -29,7 +29,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
-            <div class="container-fluid">          
+            <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><span class="lni-bulb"></span>ESSENCE</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="lni-menu"></i>
@@ -41,22 +41,22 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Services">Services</a>
-                  </li>  
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Features">Features</a>
-                  </li>                            
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Contact">Contact Us</a>
-                  </li>    
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Blog">Blog</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="{{ url('/register') }}">Register</a>
-                  </li> 
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="{{ url('/login') }}">Login</a>
-                  </li> 
+                  </li>
                   @auth
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}"
@@ -64,17 +64,17 @@
                                   document.getElementById('logout-form').submit();">
                      {{ __('Logout') }}
                  </a>
-                
+
                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                      @csrf
                  </form>
                   </li>
                   @endif
-                </ul>              
+                </ul>
               </div>
             </div>
-          </nav> 
-    
+          </nav>
+
 
         <main class="py-4" style="margin-top:40px">
             @yield('content')
@@ -90,7 +90,7 @@
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                 <h3 style="color:white">{{ config('app.name') }}</h3>
                 <div class="textwidget">
-                  <p style="color:white">we accept the connection between our customers and the researcher is agreeable and neighborly 
+                  <p style="color:white">we accept the connection between our customers and the researcher is agreeable and neighborly
                     and in this manner your installment is only an energy about our penance.
                      Thusly, we give you the opportunity to arrange your financial plan with us so we can help one .</p>
                 </div>
@@ -99,7 +99,7 @@
                   <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
                   <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
                   <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
-                </ul> 
+                </ul>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                 <div class="widget">
@@ -140,40 +140,40 @@
                   <h3 class="block-title" style="color:white">Contact Us</h3>
                   <ul class="contact-footer">
                     <li>
-                      <strong>Address :</strong> <span>1900 Pico Blvd, New York br Centernial, colorado</span>
+                      <strong>Address :</strong> <span>We are Here for You</span>
                     </li>
                     <li>
-                      <strong>Phone :</strong> <span>+48 123 456 789</span>
+                      <strong>Phone :</strong> <span>+1 (929)-4797-803</span>
                     </li>
                     <li>
-                      <strong>E-mail :</strong> <span><a href="#" style="">info@example.com</a></span>
+                      <strong>E-mail :</strong> <span><a href="#" style="">technicaltutor@gmail.com</a></span>
                     </li>
-                  </ul> 
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- Footer area End -->  
+        <!-- Footer area End -->
       </footer>
-      <!-- Footer Section End --> 
+      <!-- Footer Section End -->
     </div>
 <script src="{{ asset('js/classie.js') }}"></script>
 <script src="{{ asset('js/color-switcher.js') }}"></script>
 <script src="{{ asset('js/jquery.mixitup.js') }}"></script>
 <script src="{{ asset('js/nivo-lightbox.js') }}"></script>
-<script src="{{ asset('js/owl.carousel.js') }}"></script>    
-<script src="{{ asset('js/jquery.stellar.min.js') }}"></script>    
-<script src="{{ asset('js/jquery.nav.js') }}"></script>    
-<script src="{{ asset('js/scrolling-nav.js') }}"></script>    
-<script src="{{ asset('js/jquery.easing.min.js') }}"></script>     
-<script src="{{ asset('js/wow.js') }}"></script> 
+<script src="{{ asset('js/owl.carousel.js') }}"></script>
+<script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+<script src="{{ asset('js/jquery.nav.js') }}"></script>
+<script src="{{ asset('js/scrolling-nav.js') }}"></script>
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/wow.js') }}"></script>
 <script src="{{ asset('js/jquery.vide.js') }}"></script>
-<script src="{{ asset('js/jquery.counterup.min.js') }}"></script>    
-<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>    
-<script src="{{ asset('js/waypoints.min.js') }}"></script>    
+<script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/waypoints.min.js') }}"></script>
 <script src="{{ asset('js/form-validator.min.js') }}"></script>
-<script src="{{ asset('js/contact-form-script.js') }}"></script>   
-<script src="{{ asset('js/main.js') }}"></script>  
+<script src="{{ asset('js/contact-form-script.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
