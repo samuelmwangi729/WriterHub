@@ -45,12 +45,12 @@
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Features">Features</a>
                   </li>
-                  <li class="nav-item">
+                  {{--  <li class="nav-item">
                     <a class="nav-link page-scroll" href="Contact">Contact Us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="Blog">Blog</a>
-                  </li>
+                  </li>  --}}
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="{{ url('/register') }}">Register</a>
                   </li>
@@ -146,7 +146,7 @@
                       <strong>Phone :</strong> <span>+1 (929)-4797-803</span>
                     </li>
                     <li>
-                      <strong>E-mail :</strong> <span><a href="#" style="">technicaltutor@gmail.com</a></span>
+                      <strong>E-mail :</strong> <span><a href="#" style="">exellentprogrammer@gmail.com</a></span>
                     </li>
                   </ul>
                 </div>
