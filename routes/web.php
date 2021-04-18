@@ -81,6 +81,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('PDU14b4PJqdWGwWjrenx3p',[
         'uses'=>'OrdersController@CountOrders'
     ]);
+    Route::get("/GetOrderDetaails",[
+        'uses'=>'OrdersController@getOrderDetails'
+    ]);
     Route::get('PDU14b4PJ',[
         'uses'=>'OrdersController@CompletedOrders'
     ]);

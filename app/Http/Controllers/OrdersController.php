@@ -333,4 +333,10 @@ class OrdersController extends Controller
         Session::flash('success','Order Successfully Disputed');
         return back();
     }
+    protected function getOrderDetails(){
+       $order=Session::get('OrderId');
+       $amount=Session::get('Amount');
+       $data=[$amount,$order];
+       return $data;
+    }
 }

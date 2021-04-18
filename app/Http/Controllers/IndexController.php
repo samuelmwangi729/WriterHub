@@ -21,8 +21,7 @@ class IndexController extends Controller
         session(['Pages'=>$request->Pages]);
         $today=date('Y-m-d');
         if(Session::get('Deadline')< $today){
-          
-           return "false";
+          return "false";
         }
       else{
         $data=['message'=>['error'=>'Archived. register to continue']];

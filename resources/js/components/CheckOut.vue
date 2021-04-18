@@ -40,6 +40,9 @@ export default{
     PayWithPaypal(){
       window.open('/paywithPaypal','_parent');
     }
+  },
+  created(){
+    alert('done')
   }
 }
 </script>

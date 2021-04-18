@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Session;
-use App\User;
+use App\{User,Papers,Subject};
 use Auth;
 class HomeController extends Controller
 {
@@ -27,7 +27,9 @@ class HomeController extends Controller
     {
         // dd($request->session()->all());
         if(Session::get('Doctype') != ''){
-            return view('Orders.Finish');
+            $papers=Papers::all();
+            $subjects=Subject::all();
+            return view('Orders.Finish')->with('papers',$papers)->with('subjects',$subjects);
         }else{
             if(Auth::user()->isAdmin==1){
                 return view('Admin');
